@@ -1,0 +1,64 @@
+#contact{
+   display: flex; 
+   flex-direction: column;
+   height: 40vh;
+   width: 100%;
+   background-color: black;
+   color: white;
+}
+.contact-icon-content h2{
+    margin: 3rem;
+    padding:1rem;
+    font-size: 3rem;
+    color: white;
+}
+.contact-icon-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: row;  /*os intens flexiveis sao dispostos em linha*/
+}
+.contact-icon-contact{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0rem 3rem;
+    padding: 1rem;
+
+}
+.contact-icon{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 50px;
+}
+
+.contact-icon i{
+   font-size: 2rem; 
+   color:blue ;
+}
+
+.contact-info span{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+.contact-info p{
+    font-size: 1.2rem;
+    margin: .25rem 0rem;
+}
+.contact-info a{
+    font-size: 1.2rem;
+    margin: .25rem;
+    text-decoration: none;
+    color: white;
+    display: block;   /*faz com que o elemento dentro ocupe toda a linha*/
+}
+.contact-info a:hover{
+    transition: color .3s ease;
+    color: blue;
+
+}

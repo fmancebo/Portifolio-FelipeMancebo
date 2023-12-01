@@ -1,0 +1,39 @@
+#header{
+    display: flex;
+    justify-content: space-between;   /*afasta as caixas dentro da caixa sitada*/
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px;
+    position: fixed;
+    z-index: 3;
+    background-color:transparent;
+}
+.header-title{
+    text-decoration: none;
+}
+.header-title h1{
+    color: white;
+    font-size: 2rem;
+    transition: opacity .3s ease;
+
+}
+.header-title h1:hover{
+    opacity: .8;
+}
+.navbar{
+    max-width: 350px;     /*para tornar o layout responsivo assim nao se aproximando do item anterior*/
+    width: 100%;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;   /*da um espaçamento igual entre os elementos*/
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;    /* == bold        almenta a expessura do texto 700 equivale a 'bold' mas no weight posso definir de 100 a 900*/
+    
+}

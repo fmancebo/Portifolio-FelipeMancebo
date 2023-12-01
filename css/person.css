@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?família=Poppins:wght@400; 500; 700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box ;    /*faz com que a margin e o padding nao cubrao espaços adicionais na pag*/
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    
+}
+#person{
+    height: 100vh;              /**/
+    width: 100%;
+
+    display: flex;           /*permite que os conteudos dentro fiquem flexiveis, que eles possam ser moldados*/
+    align-items: center;    /*alinha verticamente na pag*/
+
+    background-color: black;
+    
+}
+.person-name{
+    margin-top: 11rem;
+    padding: o 20px;
+}
+
+.person-content{
+height: 100%;
+width: 50%;
+min-width: 50%;
+display: flex;
+justify-content: center;       /*alinha horizontalemte*/
+align-items: center;
+flex-direction: column;       /*define que esse elementos ficarao em coluna*/
+
+background-color: black;
+}
+
+.person-content div h1{
+    
+    color: transparent;
+    padding: 0px 4px;
+    font-size: 4.5rem;                              /*tamanho da fonte*/
+    line-height: 6rem;
+    position: relative;                            /*precisa desse position relative para alterar a posiçao absoluta dele*/
+    width: fit-content;                             /*largura apenas onde tem conteudo*/
+
+    animation: written_text .5s ease forwards;     /*variavel / tempo de duraçao / efeito / matem o efeito */
+
+}
+.person-content div h1:nth-child(1){                
+    animation-delay: 1s;
+}
+
+.person-content div h1:nth-child(2){
+    animation-delay: 2s;
+}
+
+.person-content div h1:nth-child(3){
+    animation:written_text_name .5s ease forwards ;
+    animation-delay: 3s;
+}
+.person-content div h1 span{
+    position: absolute;
+    top:0;
+    left:0;
+    
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 8, 173);
+    animation: written_text_box 1s ease;
+    animation-delay: .5s;           /*define quanto tempo a animaçao demora pra começar*/
+}
+
+.person-content div h1:nth-child(1) span{
+    animation-delay: 0.5s;
+}
+.person-content div h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+.person-content div h1:nth-child(3) span{
+    animation-delay: 2.5s;
+}
+
+
+@keyframes written_text{           /*cria um efeito no css conforme definiçao*/
+    100%{
+        color: white;
+    }
+}
+@keyframes written_text_name{     
+    100%{
+        color: blue;
+    }
+}
+@keyframes written_text_box{     
+    50%{
+        width:100% ;
+        left: 0;
+    }
+    100%{
+        width: 0;
+        left: 100%;
+    }
+}
+
+.stacks-content{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+    flex-direction: column;
+    margin-top: 6rem;
+}
+.stacks-content h3{
+    color: white;
+    font-size: 1.15rem;
+    margin-left: 10px;
+
+}
+.stacks{
+  display: flex;
+  align-items: center;
+  flex-direction: row;  
+}
+
+.stacks li{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+}
+.stacks li div:hover::after{    /*::after para inserir um conteudo depois de um elemento*/
+    content: attr(data);            /*content: attr() para atribuir o conteudo*/
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    width:20px ;
+    height: 20px;
+    color: white;
+}
+
+.stacks img{
+    width: 30px;
+    height: auto;
+    transition: transform .3s ease ; /*para suavisar o movimento*/
+}
+
+.stacks img:hover{                 /*:hover é um pseudo-classe do CSS que se aplica a um elemento quando o cursor do mouse está sobre ele*/
+    transform: scale(1.2);         /* da o efeito de espandir a a imagem ao passar o mouse por cima */
+    cursor: pointer;               /* muda a aparencia do cursor do mouse ao passar por cima de um elemento */
+}
+
+.links a img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    filter: brightness(.8);       /*da uma tranparencia ao arquivo*/
+    transition: all .3s ease;       /**/
+}
+.links a img:hover{
+    transform: scale(1.15);      /*almenta a escala do arquivo*/
+    filter:brightness(1);
+
+}
+
+.person-background{
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    flex-direction: column;
+    
+    background-image: url(../img/img5.jpg);/*utiliza uma imagem como backgroud*/
+    background-size: cover;               /*cobrir o espaço designado*/
+    background-position: top center;
+    z-index: 0;
+}
+.person-background::after{
+    content: "";                      /*usado em psdeuelementos after e before para inserir um conteudo, como uma legenda*/
+    position: absolute;              /*para usar um absolut deve usar um 'relative' no pai dele*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;                /*define o grau de relevancia que o efeito ira sobresair. adc 0 ao que voce quer que fique por cima */
+    
+    background:                 /*90deg diz da esquerda pra direita. o resto define a primeira cor (transparente) e a posição (30%) no gradiente. Isso significa que o gradiente começa como transparente e, aos 30% do tamanho do elemento, começa a mudar para a próxima cor*/
+        linear-gradient(270deg, transparent 30%, black) ; 
+}
+.wrapper-profile-photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px;
+    margin: 20px 15px;
+    
+    background: 
+        radial-gradient(black 68%, transparent 0), 
+        linear-gradient(45deg, orange 0%, #ff1493);
+        border-radius: 50%;
+}
+
+.profile-photo{
+    border-radius: 50%;               /*arredonda a borda dos elementos*/
+    width: 100%;
+}
+
