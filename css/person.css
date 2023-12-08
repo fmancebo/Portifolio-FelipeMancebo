@@ -16,14 +16,8 @@ body{
     font-family:'Poppins', sans-serif;
     
 }
-@media only screen and (orientation: landscape) {
-    #person {
-        height: auto;
-    }
-    .profile-photo{
-        max-height: 150px;
-    }
-}
+
+
 #person{
     height: 100vh;              
     width: 100%;
@@ -227,3 +221,14 @@ background-color: black;
     max-height: 300px;
 }
 
+@media only screen and (max-height: 530px) and (orientation: landscape) {
+    body #person {
+        height: auto;
+    }
+    body .profile-photo{
+        max-height: 150px;
+    }
+    body .stacks-content {
+        margin-top: 2rem;
+    }
+}

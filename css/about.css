@@ -1,11 +1,4 @@
-@media only screen and (orientation: landscape){
-    #about{
-        height: auto;
-    }
-    .backgroud-about {
-        height: auto;
-    }
-}
+
 #about{
     height: 100%;
     width: 100%;
@@ -116,4 +109,11 @@
     filter: brightness(.8);         /*da uma transparencia ao elemento*/
 }
 
-/*44:20*/
+@media only screen and (max-height: 530px) and (orientation: landscape){
+    #about{
+        height: auto;
+    }
+    .backgroud-about {
+        height: auto;
+    }
+}

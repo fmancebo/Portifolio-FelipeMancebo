@@ -1,8 +1,5 @@
-@media only screen and (orientation: landscape){
-    #contact{
-        height: auto;
-    }
-}
+
+
 #contact{
    display: flex; 
    flex-direction: column;
@@ -11,6 +8,7 @@
    background-color: black;
    color: white;
 }
+
 .contact-icon-content h2{
     margin: 3rem;
     padding:1rem;
@@ -67,4 +65,12 @@
     transition: color .3s ease;
     color: blue;
 
+}
+@media only screen and (max-height: 530px) and (orientation: landscape){
+    #contact{
+        height: auto;
+    }
+    .contact-icon-wrapper {
+        margin-bottom: 3rem;
+    }
 }

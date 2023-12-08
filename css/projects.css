@@ -126,3 +126,10 @@
  .swiper-pagination-bullet {
     background-color: whitesmoke !important; /* Cor das bolinhas inativas */
   }
+
+  @media only screen and (max-height: 530px) and (orientation: landscape){
+    .swiper-slide{
+        max-width: 300px;
+        max-height: 325px;
+    }
+}
