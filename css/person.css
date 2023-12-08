@@ -9,8 +9,6 @@
 html{
     scroll-behavior: smooth;
     font-size: 10px;
-    display: flex;
-    flex-wrap: wrap;
     background-color: black;
 }
 
@@ -18,8 +16,16 @@ body{
     font-family:'Poppins', sans-serif;
     
 }
+@media only screen and (orientation: landscape) {
+    #person {
+        height: auto;
+    }
+    .profile-photo{
+        max-height: 150px;
+    }
+}
 #person{
-    height: 100vh;              /**/
+    height: 100vh;              
     width: 100%;
 
     display: flex;           /*permite que os conteudos dentro fiquem flexiveis, que eles possam ser moldados*/
@@ -49,7 +55,7 @@ background-color: black;
     
     color: transparent;
     padding: 0px 4px;
-    font-size: 4.5rem;                              /*tamanho da fonte*/
+    font-size: calc(2vw + 3rem);                              /*tamanho da fonte*/
     line-height: 6rem;
     position: relative;                            /*precisa desse position relative para alterar a posiçao absoluta dele*/
     width: fit-content;                             /*largura apenas onde tem conteudo*/
@@ -115,17 +121,15 @@ background-color: black;
 
 .stacks-content{
     display: flex;
-    /* align-items: center; */
     justify-content: center;
-
     flex-direction: column;
     margin-top: 6rem;
 }
 .stacks-content h3{
     color: white;
-    font-size: 1.15rem;
+    font-size: calc(0.5vw + 1rem);
     margin-left: 10px;
-
+    padding: 1rem;
 }
 .stacks{
   display: flex;
@@ -149,10 +153,11 @@ background-color: black;
     width:20px ;
     height: 20px;
     color: white;
+    margin-top: 0.5vw;
 }
 
 .stacks img{
-    width: 30px;
+    width: calc(0.5vw + 3rem);
     height: auto;
     transition: transform .3s ease ; /*para suavisar o movimento*/
 }
@@ -163,8 +168,8 @@ background-color: black;
 }
 
 .links a img{
-    width: 30px;
-    height: 30px;
+    width: calc(1vw + 2rem);
+    height: auto;
     margin: 10px;
     filter: brightness(.8);       /*da uma tranparencia ao arquivo*/
     transition: all .3s ease;       /**/
@@ -207,7 +212,7 @@ background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 14px;
+    padding: 10px;
     margin: 20px 15px;
     
     background: 
@@ -219,5 +224,6 @@ background-color: black;
 .profile-photo{
     border-radius: 50%;               /*arredonda a borda dos elementos*/
     width: 100%;
+    max-height: 300px;
 }
 

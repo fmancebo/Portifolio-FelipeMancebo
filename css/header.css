@@ -3,7 +3,7 @@
     justify-content: space-between;   /*afasta as caixas dentro da caixa sitada*/
     align-items: center;
     width: 100%;
-    padding: 15px 30px;
+    padding: 10px 15px;
     position: fixed;
     z-index: 3;
     background-color:transparent;
@@ -13,7 +13,7 @@
 }
 .header-title h1{
     color: white;
-    font-size: 2rem;
+    font-size: calc(0.5vw + 1.5rem);
     transition: opacity .3s ease;
 
 }
@@ -24,16 +24,80 @@
     max-width: 350px;     /*para tornar o layout responsivo assim nao se aproximando do item anterior*/
     width: 100%;
 }
-.navbar ul{
+.navbar-links{
     list-style: none;
     display: flex;
     align-items: center;
     justify-content: space-around;   /*da um espaçamento igual entre os elementos*/
+    width: 100%;
 }
-.navbar ul li a{
+.navbar-links li a{
     text-decoration: none;
     color: white;
-    font-size: 1.4rem;
+    font-size: calc(0.5vw + 1rem);
     font-weight: 700;    /* == bold        almenta a expessura do texto 700 equivale a 'bold' mas no weight posso definir de 100 a 900*/
-    
+    transition: all .2s ease-in-out;
+}
+.menu-hamburguer{
+    display: none;
+}
+
+@media (max-width: 560px){
+    .navbar{
+        display: flex;
+        justify-content: end;
+    }
+    .navbar-links{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background-color: #333;
+        transition: .6s ease-out;
+        clip-path: circle(100px at 90% -20%);
+        pointer-events: none;
+
+    }
+    .menu-hamburguer:hover{
+        opacity: .8;
+        cursor: pointer;
+    }
+    .menu-hamburguer{
+        display: block;
+        padding: 0;
+        margin-bottom: 0.4rem;
+        background-color: transparent;
+        border: none;
+        border-top: 3px solid white;
+        transition: all .3s ease-in-out;
+        z-index: 3;
+    }
+    .menu-hamburguer::before,
+    .menu-hamburguer::after{
+    content: "";
+    display: block;
+    width: 25px;
+    height:3px;
+    margin-top: .6rem;
+    background-color: white;
+    }
+    /* ATIVO */
+    .navbar.active .navbar-links{
+        clip-path: circle(1440px at 90% -18%);
+        pointer-events: all;
+    }
+    .navbar.active .menu-hamburguer{
+    border-top-color: transparent;
+    }
+    .navbar.active .menu-hamburguer::before{
+        transition: all .2 ease-in-out;
+        transform: rotate(-45deg) translate(-2px, -1px);
+    }
+    .navbar.active .menu-hamburguer::after{
+        transition: all .2 ease-in-out;
+        transform: rotate(45deg) translate(-7px, -5px);
+    }
 }

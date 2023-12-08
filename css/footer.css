@@ -6,6 +6,7 @@ footer{
     align-items: center;
     margin-top: auto;
     background-color: #191919;
+    font-size: calc(0.5vw + 0.8rem);
 }
 .container-footer{
     display: flex;
