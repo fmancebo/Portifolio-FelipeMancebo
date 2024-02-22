@@ -18,7 +18,8 @@
     color: white;
 
 }
-.swiper{
+
+.mySwiper{
     display: flex;
     margin-top: 2rem;
     height: 500px;
@@ -26,11 +27,16 @@
     justify-content: center;
     flex-direction: row;        /*organiza os intens dentro da caixa da esquerda pra direita*/
     padding: 0px 20px;
+    
+}
+.swiper-slide{
+    flex-shrink: initial;
 }
 
-.swiper-slide{
+.slide{
     height:100%;
     width: 100%;
+    margin: 0px 10px;
     max-width: 320px;
     max-height: 450px;
     padding:30px 20px 20px;
@@ -42,9 +48,10 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
+
 }
 
-.swiper-slide::after{
+.slide::after{
     content: "";
     position: absolute;
     top: 0;
@@ -128,7 +135,7 @@
   }
 
   @media only screen and (max-height: 530px) and (orientation: landscape){
-    .swiper-slide{
+    .slide{
         max-width: 300px;
         max-height: 325px;
     }

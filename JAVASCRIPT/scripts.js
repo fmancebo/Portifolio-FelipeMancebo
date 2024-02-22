@@ -9,7 +9,7 @@ menuhamburguer.addEventListener('click', () => {
 
 links.forEach(item => {
     item.addEventListener('click', () => {
-      nav.classList.toggle('active');  
+        nav.classList.toggle('active');
     })
 })
 // END
@@ -18,7 +18,7 @@ links.forEach(item => {
 var header = document.getElementById('header');             //para qualquer funçao no JS primeiro definimos a variavel
 
 window.addEventListener('scroll', () => {                   //essa funçao define um envento. evento esse do mouse que seria => 
-    if(window.scrollY > 200){                               //para definir a posiçao do mouse usamos scrolly e nao scroll
+    if (window.scrollY > 200) {                               //para definir a posiçao do mouse usamos scrolly e nao scroll
         header.style.background = '#191919';                // e definimos a funçao atraves do if else para executar conforme decidirmos
     } else {
         header.style.background = 'transparent';
@@ -28,28 +28,29 @@ window.addEventListener('scroll', () => {                   //essa funçao defin
 
 
 //CARROCEL PREJETOS
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper", {
     slidesPerView: 2,
-    spaceBetween: 30,
+    spaceBetween: 10,
     pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+        el: ".swiper-pagination",
+        clickable: true,
     },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    loop: false,
 });
 
 //END CARROCEL PROJETOS
 
 //FUNÇAO PARA SLIDE CONFORME LARGURA
 
-function handleWidth(){
+function handleWidth() {
     let getWidth = window.innerWidth || document.documentElement.clientWidth;
     slideShow = 2;
 
-    if(getWidth < 700){
+    if (getWidth < 700) {
         slideShow = 1
     }
     // Atualiza a configuração do Swiper
