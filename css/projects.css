@@ -1,17 +1,20 @@
-@media (min-width: 1025px){
-    .swiper-wrapper{
+@media (min-width: 1025px) {
+    .swiper-wrapper {
         justify-content: center;
     }
-    #projects{
+
+    #projects {
         height: 100vh;
     }
 }
-#projects{
+
+#projects {
     height: auto;
     width: 100%;
     background-color: black;
 }
-.projects-title h2{
+
+.projects-title h2 {
     margin: 6rem 3rem 0px;
     padding: 1rem;
     font-size: calc(0.5vw + 2rem);
@@ -19,123 +22,142 @@
 
 }
 
-.mySwiper{
+.mySwiper {
     display: flex;
     margin-top: 2rem;
     height: 500px;
     align-items: center;
     justify-content: center;
-    flex-direction: row;        /*organiza os intens dentro da caixa da esquerda pra direita*/
+    flex-direction: row;
+    /*organiza os intens dentro da caixa da esquerda pra direita*/
     padding: 0px 20px;
-    
+
 }
-.swiper-slide{
+
+.swiper-slide {
     flex-shrink: initial;
 }
 
-.slide{
-    height:100%;
+.slide {
+    height: 100%;
     width: 100%;
     margin: 0px 10px;
     max-width: 320px;
     max-height: 450px;
-    padding:30px 20px 20px;
+    padding: 30px 20px 20px;
     background-color: white;
     display: flex !important;
     text-align: center;
     align-items: center;
-    flex-direction: column;         /*organiza os intens dentro da caixa de cima pra baixo*/
+    flex-direction: column;
+    /*organiza os intens dentro da caixa de cima pra baixo*/
     border-radius: 20px;
     position: relative;
     z-index: 1;
 
 }
 
-.slide::after{
+.slide::after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     height: 40%;
     width: 100%;
-    background-color: #09093d; 
+    background-color: #09093d;
     border-radius: 20px 20px 0 0;
     z-index: -1;
 }
-.swiper-wrapper{
-    
-    height:100%;
+
+.swiper-wrapper {
+
+    height: 100%;
     width: 100%;
     flex-direction: row;
     align-items: center;
-   
+
 }
-.img-project{
+
+.img-project {
     height: 240px;
     width: 250px;
     border-radius: 30px;
-    border: 4px solid #090920 ;
-    overflow: hidden;            /*qualquer conteúdo que exceda as dimensões do elemento será cortado e não será visível*/
+    border: 4px solid #090920;
+    overflow: hidden;
+    /*qualquer conteúdo que exceda as dimensões do elemento será cortado e não será visível*/
     margin: 0 auto;
     position: relative;
 }
-.img-project a img{
+
+.img-project a img {
     height: 100%;
     width: 100%;
     border-radius: 30px;
-    border: 2px solid white;     /*coloca borda. tam. formato. cor*/
+    border: 2px solid white;
+    /*coloca borda. tam. formato. cor*/
     position: absolute;
     top: 0;
     left: 0;
-    object-fit: cover;          /* redimensiona a img cortando ou a expandindo para cabem no container, ajudando a manter qualidade */
-    transition: transform .3s ease-out;      /*Isso cria um efeito de “transform” suave quando o usuário passa o cursor sobre a imagem.*/
+    object-fit: cover;
+    /* redimensiona a img cortando ou a expandindo para cabem no container, ajudando a manter qualidade */
+    transition: transform .3s ease-out;
+    /*Isso cria um efeito de “transform” suave quando o usuário passa o cursor sobre a imagem.*/
     cursor: pointer;
 }
-.img-project a img:hover{
-    transform: scale(1.1);         
+
+.img-project a img:hover {
+    transform: scale(1.1);
 }
-.swiper-slide span{
+
+.swiper-slide span {
     align-items: center;
     justify-content: center;
     color: black;
     font-weight: bold;
     font-size: 1.7rem;
-    margin: .75rem auto .5rem auto;   
+    margin: .75rem auto .5rem auto;
 }
-.swiper-slide p{
+
+.swiper-slide p {
     color: #3d3d4b;
     font-weight: bold;
     font-size: 1.2rem;
     margin: auto;
 }
-.cta-project{
+
+.cta-project {
     width: 200px;
     margin: auto auto 15px auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;    /*usada em um contêiner flexível para distribuir uniformemente os itens ao longo do eixo principal (horizontalmente)*/
+    justify-content: space-between;
+    /*usada em um contêiner flexível para distribuir uniformemente os itens ao longo do eixo principal (horizontalmente)*/
 }
-.cta-project a{
-    padding: 5px 16px; 
+
+.cta-project a {
+    padding: 5px 16px;
     font-size: 1.25rem;
     color: white;
     background-color: #09093d;
     border-radius: 10px;
-    text-decoration:none ;
-    transition: transform .3s ease ;
-    
- }
- .cta-project a:hover {
-     transform: scale(1.1);
-     filter: brightness(0.9);
-     
- }
- .swiper-pagination-bullet {
-    background-color: whitesmoke !important; /* Cor das bolinhas inativas */
-  }
+    text-decoration: none;
+    transition: transform .3s ease;
 
-  @media only screen and (max-height: 530px) and (orientation: landscape){
-    .slide{
+}
+
+.cta-project a:hover {
+    transform: scale(1.1);
+    filter: brightness(0.9);
+
+}
+
+.swiper-pagination-bullet {
+    background-color: whitesmoke !important;
+    /* Cor das bolinhas inativas */
+}
+
+@media only screen and (max-height: 530px) and (orientation: landscape) {
+    .slide {
         max-width: 300px;
         max-height: 325px;
     }

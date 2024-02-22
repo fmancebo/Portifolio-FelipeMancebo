@@ -30,7 +30,7 @@ window.addEventListener('scroll', () => {                   //essa funçao defin
 //CARROCEL PREJETOS
 var swiper = new Swiper(".swiper", {
     slidesPerView: 2,
-    spaceBetween: 10,
+    spaceBetween: 30,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,

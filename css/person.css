@@ -129,6 +129,7 @@ background-color: black;
   display: flex;
   align-items: center;
   flex-direction: row;  
+  flex-wrap: wrap;
 }
 
 .stacks li{
@@ -230,5 +231,14 @@ background-color: black;
     }
     body .stacks-content {
         margin-top: 2rem;
+    }
+    .person-content div h1{
+        font-size: calc(2vw + 2rem);
+        line-height: 4rem;
+    }
+}
+@media only screen and (max-width: 500px){
+    .stacks li{
+        margin: 2px;
     }
 }
