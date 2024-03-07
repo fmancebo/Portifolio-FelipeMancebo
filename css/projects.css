@@ -1,8 +1,12 @@
 #projects {
-    height: 80vh;
+    height: 75vh;
     min-width: 100%;
     background-color: black;
 }
+.projects-title{
+    margin-bottom: 4rem;
+}
+
 
 .projects-title h2 {
     padding: 1rem;
@@ -10,10 +14,14 @@
     color: white;
 
 }
-
+.container-projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .wrapper-projects {
     display: flex;
-    width: 100% !important;
+    width: 90% ;
     height: 100%;
     align-items: center;
     justify-content: center !important;
@@ -99,7 +107,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
+
 }
 
 .cta-project a {
@@ -119,11 +127,6 @@
     filter: brightness(0.9);
 
 }
-
-
-
-
-
 
 @media only screen and (max-height: 530px) and (orientation: landscape) {
     #projects {
