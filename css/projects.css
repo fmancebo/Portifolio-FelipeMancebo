@@ -1,63 +1,45 @@
-@media (min-width: 1025px) {
-    .swiper-wrapper {
-        justify-content: center;
-    }
-
-    #projects {
-        height: 100vh;
-    }
-}
-
 #projects {
-    height: auto;
-    width: 100%;
+    height: 80vh;
+    min-width: 100%;
     background-color: black;
 }
 
 .projects-title h2 {
-    margin: 6rem 3rem 0px;
     padding: 1rem;
     font-size: calc(0.5vw + 2rem);
     color: white;
 
 }
 
-.mySwiper {
+.wrapper-projects {
     display: flex;
-    margin-top: 2rem;
-    height: 500px;
+    width: 100% !important;
+    height: 100%;
     align-items: center;
-    justify-content: center;
+    justify-content: center !important;
     flex-direction: row;
-    /*organiza os intens dentro da caixa da esquerda pra direita*/
-    padding: 0px 20px;
-
+    padding-left: 4rem;
 }
 
-.swiper-slide {
-    flex-shrink: initial;
-}
-
-.slide {
+.project {
     height: 100%;
     width: 100%;
     margin: 0px 10px;
     max-width: 320px;
-    max-height: 450px;
+    min-height: 450px;
     padding: 30px 20px 20px;
     background-color: white;
-    display: flex !important;
+    display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
-    /*organiza os intens dentro da caixa de cima pra baixo*/
     border-radius: 20px;
     position: relative;
     z-index: 1;
 
 }
 
-.slide::after {
+.project::after {
     content: "";
     position: absolute;
     top: 0;
@@ -67,15 +49,6 @@
     background-color: #09093d;
     border-radius: 20px 20px 0 0;
     z-index: -1;
-}
-
-.swiper-wrapper {
-
-    height: 100%;
-    width: 100%;
-    flex-direction: row;
-    align-items: center;
-
 }
 
 .img-project {
@@ -109,7 +82,7 @@
     transform: scale(1.1);
 }
 
-.swiper-slide span {
+.project span {
     align-items: center;
     justify-content: center;
     color: black;
@@ -118,7 +91,7 @@
     margin: .75rem auto .5rem auto;
 }
 
-.swiper-slide p {
+.project p {
     color: #3d3d4b;
     font-weight: bold;
     font-size: 1.2rem;
@@ -151,14 +124,33 @@
 
 }
 
-.swiper-pagination-bullet {
-    background-color: whitesmoke !important;
-    /* Cor das bolinhas inativas */
+@media screen and (max-width: 799px) {
+    .wrapper-projects {
+        padding: 0rem 2.5rem;
+    }
 }
 
+
+
 @media only screen and (max-height: 530px) and (orientation: landscape) {
-    .slide {
-        max-width: 300px;
-        max-height: 325px;
+    #projects {
+        height: 140vh;
+    }
+
+    .wrapper-projects {
+        padding-left: 4.5rem;
+    }
+
+    .project {
+        max-width: 320px;
+        min-height: 200px;
+    }
+
+    .img-project {
+        height: 200px;
+    }
+
+    .project p {
+        margin-bottom: 2rem;
     }
 }

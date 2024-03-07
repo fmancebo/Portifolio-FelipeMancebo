@@ -15,7 +15,7 @@
     color: white;
     font-size: calc(0.5vw + 1.5rem);
     transition: opacity .3s ease;
-
+    display: inline-block;
 }
 .header-title h1:hover{
     opacity: .8;
