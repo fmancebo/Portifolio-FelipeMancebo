@@ -128,6 +128,21 @@
 
 }
 
+@media screen and (max-width: 599px) {
+    #projects {
+        height: 75vh;
+    }
+    .project{
+        height: 600px;
+    }
+    .project p{
+        font-size: 1.5rem;
+    }
+    .cta-project a{
+        font-size: 1.5rem;
+    }
+}
+
 @media only screen and (max-height: 530px) and (orientation: landscape) {
     #projects {
         height: 140vh;
