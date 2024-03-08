@@ -3,10 +3,6 @@
     min-width: 100%;
     background-color: black;
 }
-.projects-title{
-    margin-bottom: 4rem;
-}
-
 
 .projects-title h2 {
     padding: 1rem;
@@ -16,6 +12,8 @@
 }
 .container-projects{
     display: flex;
+    height: 100%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -27,7 +25,11 @@
     justify-content: center !important;
     flex-direction: row;
 }
-
+/* form{
+    border: 0.2px solid blue;
+    padding: 1rem;
+    border-radius: 5px;
+} */
 .project {
     width: 100%;
     height: 400px;
@@ -40,7 +42,6 @@
     border-radius: 20px;
     position: relative;
     z-index: 1;
-
 }
 
 .project::after {

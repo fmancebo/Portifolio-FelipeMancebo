@@ -1,35 +1,41 @@
-
-
-#contact{
-   display: flex; 
-   flex-direction: column;
-   height: 40vh;
-   width: 100%;
-   background-color: black;
-   color: white;
+#contact {
+    height: auto;
+    width: 100%;
+    background-color: black;
+    color: white;
 }
 
-.contact-icon-content h2{
+.container-contacts {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon-content h2 {
     margin: 3rem;
-    padding:1rem;
+    padding: 1rem;
     font-size: calc(0.5vw + 2rem);
     color: white;
 }
-.contact-icon-wrapper{
-    flex-wrap: wrap;
+
+.contact-icon-wrapper {
     display: flex;
-    align-items: center;
-    flex-direction: row;  /*os intens flexiveis sao dispostos em linha*/
+    width: 40%;
+    height: 100%;
+    flex-direction: column;
 }
-.contact-icon-contact{
+
+
+.contact-icon-contact {
     display: flex;
-    align-items: center;
     flex-direction: row;
-    margin: 0rem 3rem;
+    margin: 2rem 3rem;
     padding: 1rem;
 
 }
-.contact-icon{
+
+.contact-icon {
     height: calc(0.7vw + 3rem);
     width: calc(0.7vw + 3rem);
     display: flex;
@@ -41,35 +47,144 @@
     border-radius: 50px;
 }
 
-.contact-icon i{
-   font-size: calc(0.5vw + 2rem);
-   color:blue ;
+.contact-icon i {
+    font-size: calc(0.5vw + 2rem);
+    font-weight: 700;
+    color: blue;
 }
 
-.contact-info span{
+.contact-info span {
     font-size: calc(0.5vw + 1.2rem);
     font-weight: bold;
 }
-.contact-info p{
+
+.contact-info p {
     font-size: calc(0.5vw + 1rem);
     margin: .25rem 0rem;
 }
-.contact-info a{
+
+.contact-info a {
     font-size: calc(0.5vw + 1rem);
     margin: .25rem;
     text-decoration: none;
     color: white;
-    display: block;   /*faz com que o elemento dentro ocupe toda a linha*/
+    display: block;
+    /*faz com que o elemento dentro ocupe toda a linha*/
 }
-.contact-info a:hover{
+
+.contact-info a:hover {
     transition: color .3s ease;
     color: blue;
 
 }
-@media only screen and (max-height: 530px) and (orientation: landscape){
-    #contact{
+
+.cont-form {
+    display: flex;
+    height: auto;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form-grupo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.controls {
+    display: flex;
+    width: 45%;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.controls label {
+    font-size: calc(0.5vw + 1.2rem);
+    font-weight: bold;
+}
+
+.msg-form {
+    width: 100%;
+
+}
+
+.controls textarea {
+    padding-left: 4px;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(230, 230, 250);
+}
+
+.controls textarea:focus {
+    border: 2px solid blue;
+}
+
+.controls input {
+    height: 2.5rem;
+    padding-left: 4px;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 250);
+    outline: none;
+}
+
+.controls input:focus {
+    border: 2px solid blue;
+}
+
+.botton-form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.botton-form button {
+    width: 30%;
+    height: 3rem;
+    border-radius: 5px;
+    background-color: rgb(230, 230, 250);
+    font-size: calc(0.5vw + 1.2rem);
+    ;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+    font-weight: bold;
+}
+
+.botton-form button:hover {
+    filter: brightness(120%);
+}
+
+.botton-form button:active {
+    border: 2px solid blue;
+}
+
+@media screen and (max-width: 730px) {
+    .container-contacts {
+        flex-wrap: wrap;
+    }
+
+    .contact-icon-wrapper {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+    .cont-form {
+        width: auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-height: 530px) and (orientation: landscape) {
+    #contact {
         height: auto;
     }
+
     .contact-icon-wrapper {
         margin-bottom: 3rem;
     }
