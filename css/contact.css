@@ -121,11 +121,15 @@
 
 .controls textarea {
     padding-left: 4px;
+    padding-top: 4px;
     border-radius: 5px;
     outline: none;
     resize: none;
     background-color: rgb(230, 230, 250);
-    transition: transform 0.2s ease;
+    color: black;
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+    transition: transform 0.1s ease-in-out;
 }
 
 .controls textarea:hover {
@@ -142,7 +146,10 @@
     border-radius: 5px;
     background-color: rgb(230, 230, 250);
     outline: none;
-    transition: transform 0.2s ease;
+    color: black;
+    font-family:'Poppins', sans-serif;
+    font-size: 2rem;
+    transition: transform 0.1s ease-in-out;
 }
 
 .controls input:hover {
