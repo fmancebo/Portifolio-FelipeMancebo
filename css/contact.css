@@ -45,6 +45,10 @@
     background-color: white;
     padding: 1rem;
     border-radius: 50px;
+    transition:transform 0.2s ease;
+}
+.contact-icon:hover{
+    transform: scale(120%);
 }
 
 .contact-icon i {
@@ -69,7 +73,9 @@
     text-decoration: none;
     color: white;
     display: block;
-    /*faz com que o elemento dentro ocupe toda a linha*/
+}
+.contact-icon-contact a{
+    text-decoration: none;
 }
 
 .contact-info a:hover {
