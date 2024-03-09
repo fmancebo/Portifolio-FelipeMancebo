@@ -45,9 +45,10 @@
     background-color: white;
     padding: 1rem;
     border-radius: 50px;
-    transition:transform 0.2s ease;
+    transition: transform 0.2s ease;
 }
-.contact-icon:hover{
+
+.contact-icon:hover {
     transform: scale(120%);
 }
 
@@ -74,7 +75,8 @@
     color: white;
     display: block;
 }
-.contact-icon-contact a{
+
+.contact-icon-contact a {
     text-decoration: none;
 }
 
@@ -123,6 +125,11 @@
     outline: none;
     resize: none;
     background-color: rgb(230, 230, 250);
+    transition: transform 0.2s ease;
+}
+
+.controls textarea:hover {
+    transform: scale(101%);
 }
 
 .controls textarea:focus {
@@ -135,6 +142,11 @@
     border-radius: 5px;
     background-color: rgb(230, 230, 250);
     outline: none;
+    transition: transform 0.2s ease;
+}
+
+.controls input:hover {
+    transform: scale(101%);
 }
 
 .controls input:focus {
