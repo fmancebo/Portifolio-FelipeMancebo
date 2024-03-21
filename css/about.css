@@ -1,5 +1,4 @@
-
-#about{
+#about {
     height: 100%;
     width: 100%;
     background-color: black;
@@ -8,7 +7,7 @@
     color: white;
 }
 
-.backgroud-about{
+.backgroud-about {
     width: 50%;
     height: 100vh;
     display: flex;
@@ -16,12 +15,14 @@
     align-items: center;
 
 }
-.img-wrapper{
+
+.img-wrapper {
     height: 100%;
     width: 100%;
     position: relative;
 }
-.img-wrapper::after{
+
+.img-wrapper::after {
     content: "";
     position: absolute;
     top: 0;
@@ -29,19 +30,22 @@
 
     height: 100%;
     width: 100%;
-    background: 
-        linear-gradient(.25turn, transparent 30%, black),  /*.25turn é outra forma de escrever a direçao*/
-        linear-gradient(.5turn, transparent 30%, black),  
-        linear-gradient(1turn, transparent 65%, black);  
+    background:
+        linear-gradient(.25turn, transparent 30%, black),
+        /*.25turn é outra forma de escrever a direçao*/
+        linear-gradient(.5turn, transparent 30%, black),
+        linear-gradient(1turn, transparent 65%, black);
 
-}           
-.img-wrapper img{
-    height:100% ;
-    width: 100%;
-    object-fit: cover;    /*corta ou expande a img/video para que caiba no container*/
 }
 
-.box-about{
+.img-wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /*corta ou expande a img/video para que caiba no container*/
+}
+
+.box-about {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -49,70 +53,93 @@
     width: 50%;
     padding: 1rem;
 }
-.section-subtitle h2{
-    display: inline-block;          /*faz com que os elementos sejam inline mas possam ser flex tambem diferente de apenas inline */
-    font-size:  calc(0.5vw + 2rem);
+
+.section-subtitle h2 {
+    display: inline-block;
+    /*faz com que os elementos sejam inline mas possam ser flex tambem diferente de apenas inline */
+    font-size: calc(0.5vw + 2rem);
 }
-.section-subtitle h2 span{
+
+.section-subtitle h2 span {
     padding: 3px 5px;
     border-radius: 4px;
     color: black;
     background-color: white;
-    
+
 }
-.box-about h3{
+
+.box-about h3 {
     margin: 2rem 1px;
     font-size: calc(0.5vw + 1.6rem);
 }
-.box-about h3 p{
+
+.box-about h3 p {
     display: inline-block;
     padding: 2px 4px;
     border-radius: 4px;
     color: black;
     background-color: rgb(255, 8, 173);
-    width: fit-content;           /*largura apenas para acomodar conteudo*/
+    width: fit-content;
+    /*largura apenas para acomodar conteudo*/
 }
 
-.box-about h4{
+.box-about h4 {
     margin: 1rem 5px;
     font-size: calc(0.5vw + 1.2rem);
 }
 
 
-.box-about h4 p{
+/* .box-about h4 p {
     display: inline;
     padding: 2px 4px;
-
-    color: blue;
     font-size: bold;
     font-weight: 1.75rem;
+} */
+
+.box-about h4 a {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: bold;
+    font-weight: 1.75rem;
+    color: blue;
+    transition: transform 0.2s ease;
 }
-.button-cta{
+
+.box-about h4 a:hover {
+    transform: scale(110%);
+}
+
+.button-cta {
     display: flex;
     max-width: 190px;
     margin: 4rem 3rem;
 }
-.button-cta a button{
+
+.button-cta a button {
     display: inline-block;
     width: 100%;
     max-width: 172px;
     padding: 10px;
     font-family: 'poppins', sans-serif;
     font-weight: 700;
-    letter-spacing: .15rem;             /*espaço entre as letras*/
+    letter-spacing: .15rem;
+    /*espaço entre as letras*/
     cursor: pointer;
     border-radius: 10px;
     font-size: calc(0.5vw + 1rem);
 }
-.button-cta a button:hover{
+
+.button-cta a button:hover {
     transition: all .3s ease;
-    filter: brightness(.8);         /*da uma transparencia ao elemento*/
+    filter: brightness(.8);
+    /*da uma transparencia ao elemento*/
 }
 
-@media only screen and (max-height: 530px) and (orientation: landscape){
-    #about{
+@media only screen and (max-height: 530px) and (orientation: landscape) {
+    #about {
         height: auto;
     }
+
     .backgroud-about {
         height: auto;
     }
