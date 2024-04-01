@@ -15,14 +15,19 @@ links.forEach(item => {
 // END
 
 //CABEÇALHO
-var header = document.getElementById('header');             //para qualquer funçao no JS primeiro definimos a variavel
+var header = document.getElementById('header');
+var lastScroll = 0;
 
-window.addEventListener('scroll', () => {                   //essa funçao define um envento. evento esse do mouse que seria => 
-    if (window.scrollY > 200) {                               //para definir a posiçao do mouse usamos scrolly e nao scroll
-        header.style.background = '#191919';                // e definimos a funçao atraves do if else para executar conforme decidirmos
+window.addEventListener('scroll', () => {
+    var currentScroll = window.scrollY;
+    if (currentScroll > lastScroll && currentScroll > 200) {
+        // se estiver rolando para baixo e passar dos 200px, esconde o cabeçalho
+        header.style.top = '-50px';
     } else {
-        header.style.background = 'transparent';
+        // se estiver rolando para cima, mostra o cabeçalho
+        header.style.background = '#191919';
+        header.style.top = '0';
     }
+    lastScroll = currentScroll;
 });
 //FIM DO CABEÇALHO
-

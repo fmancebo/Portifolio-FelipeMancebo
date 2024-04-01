@@ -1,53 +1,63 @@
-#header{
+#header {
     display: flex;
-    justify-content: space-between;   /*afasta as caixas dentro da caixa sitada*/
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 10px 15px;
     position: fixed;
+    top: 0;
     z-index: 3;
-    background-color:transparent;
+    background-color: transparent;
+    transition: all 0.5s ease;
 }
-.header-title{
+
+.header-title {
     text-decoration: none;
 }
-.header-title h1{
+
+.header-title h1 {
     color: white;
     font-size: calc(0.5vw + 1.5rem);
     transition: opacity .3s ease;
     display: inline-block;
 }
-.header-title h1:hover{
+
+.header-title h1:hover {
     opacity: .8;
 }
-.navbar{
-    max-width: 350px;     /*para tornar o layout responsivo assim nao se aproximando do item anterior*/
+
+.navbar {
+    max-width: 350px;
     width: 100%;
 }
-.navbar-links{
+
+.navbar-links {
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;   /*da um espaçamento igual entre os elementos*/
+    justify-content: space-around;
     width: 100%;
 }
-.navbar-links li a{
+
+.navbar-links li a {
     text-decoration: none;
     color: white;
     font-size: calc(0.5vw + 1rem);
-    font-weight: 700;    /* == bold        almenta a expessura do texto 700 equivale a 'bold' mas no weight posso definir de 100 a 900*/
+    font-weight: 700;
     transition: all .2s ease-in-out;
 }
-.menu-hamburguer{
+
+.menu-hamburguer {
     display: none;
 }
 
-@media (max-width: 560px){
-    .navbar{
+@media (max-width: 560px) {
+    .navbar {
         display: flex;
         justify-content: end;
     }
-    .navbar-links{
+
+    .navbar-links {
         display: flex;
         flex-direction: column;
         width: 50%;
@@ -61,11 +71,13 @@
         pointer-events: none;
 
     }
-    .menu-hamburguer:hover{
+
+    .menu-hamburguer:hover {
         opacity: .8;
         cursor: pointer;
     }
-    .menu-hamburguer{
+
+    .menu-hamburguer {
         display: block;
         padding: 0;
         margin-bottom: 0.4rem;
@@ -75,28 +87,33 @@
         transition: all .3s ease-in-out;
         z-index: 3;
     }
+
     .menu-hamburguer::before,
-    .menu-hamburguer::after{
-    content: "";
-    display: block;
-    width: 25px;
-    height:3px;
-    margin-top: .6rem;
-    background-color: white;
+    .menu-hamburguer::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin-top: .6rem;
+        background-color: white;
     }
+
     /* ATIVO */
-    .navbar.active .navbar-links{
+    .navbar.active .navbar-links {
         clip-path: circle(1440px at 90% -18%);
         pointer-events: all;
     }
-    .navbar.active .menu-hamburguer{
-    border-top-color: transparent;
+
+    .navbar.active .menu-hamburguer {
+        border-top-color: transparent;
     }
-    .navbar.active .menu-hamburguer::before{
+
+    .navbar.active .menu-hamburguer::before {
         transition: all .2 ease-in-out;
         transform: rotate(-45deg) translate(-2px, -1px);
     }
-    .navbar.active .menu-hamburguer::after{
+
+    .navbar.active .menu-hamburguer::after {
         transition: all .2 ease-in-out;
         transform: rotate(45deg) translate(-7px, -5px);
     }
