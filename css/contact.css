@@ -1,217 +1,212 @@
 #contact {
-    height: auto;
-    width: 100%;
-    background-color: black;
-    color: white;
+  height: auto;
+  width: 100%;
+  background-color: black;
+  color: white;
 }
 
 .container-contacts {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-icon-content h2 {
-    margin: 3rem;
-    padding: 1rem;
-    font-size: calc(0.5vw + 2rem);
-    color: white;
+  margin: 3rem;
+  padding: 1rem;
+  font-size: calc(0.5vw + 2rem);
+  color: white;
 }
 
 .contact-icon-wrapper {
-    display: flex;
-    width: 40%;
-    height: 100%;
-    flex-direction: column;
+  display: flex;
+  width: 40%;
+  height: 100%;
+  flex-direction: column;
 }
 
-
 .contact-icon-contact {
-    display: flex;
-    flex-direction: row;
-    margin: 2rem 3rem;
-    padding: 1rem;
-
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 3rem;
+  padding: 1rem;
 }
 
 .contact-icon {
-    height: calc(0.7vw + 3rem);
-    width: calc(0.7vw + 3rem);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 2rem;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 50px;
-    transition: transform 0.2s ease;
+  height: calc(0.7vw + 3rem);
+  width: calc(0.7vw + 3rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 50px;
+  transition: transform 0.2s ease;
 }
 
 .contact-icon:hover {
-    transform: scale(120%);
+  transform: scale(120%);
 }
 
 .contact-icon i {
-    font-size: calc(0.5vw + 2rem);
-    font-weight: 700;
-    color: blue;
+  font-size: calc(0.5vw + 2rem);
+  font-weight: 700;
+  color: blue;
 }
 
 .contact-info span {
-    font-size: calc(0.5vw + 1.2rem);
-    font-weight: bold;
+  font-size: calc(0.5vw + 1.2rem);
+  font-weight: bold;
 }
 
 .contact-info p {
-    font-size: calc(0.5vw + 1rem);
-    margin: .25rem 0rem;
+  font-size: calc(0.5vw + 1rem);
+  margin: 0.25rem 0rem;
 }
 
 .contact-info a {
-    font-size: calc(0.5vw + 1rem);
-    margin: .25rem;
-    text-decoration: none;
-    color: white;
-    display: block;
+  font-size: calc(0.5vw + 1rem);
+  margin: 0.25rem;
+  text-decoration: none;
+  color: white;
+  display: block;
 }
 
 .contact-icon-contact a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .contact-info a:hover {
-    transition: color .3s ease;
-    color: blue;
-
+  transition: color 0.3s ease;
+  color: blue;
 }
 
 .cont-form {
-    display: flex;
-    height: auto;
-    width: 40%;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  height: auto;
+  width: 40%;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .form-grupo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .controls {
-    display: flex;
-    width: 45%;
-    flex-direction: column;
-    margin-bottom: 1.5rem;
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
 }
 
 .controls label {
-    font-size: calc(0.5vw + 1.2rem);
-    font-weight: bold;
+  font-size: calc(0.5vw + 1.2rem);
+  font-weight: bold;
 }
 
 .msg-form {
-    width: 100%;
-
+  width: 100%;
 }
 
 .controls textarea {
-    padding-left: 4px;
-    padding-top: 4px;
-    border-radius: 5px;
-    outline: none;
-    resize: none;
-    background-color: rgb(230, 230, 250);
-    color: black;
-    font-family:'Poppins', sans-serif;
-    font-size: 2rem;
-    transition: transform 0.1s ease-in-out;
+  padding-left: 4px;
+  padding-top: 4px;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  background-color: rgb(230, 230, 250);
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  transition: transform 0.1s ease-in-out;
 }
 
 .controls textarea:hover {
-    transform: scale(101%);
+  transform: scale(101%);
 }
 
 .controls textarea:focus {
-    border: 2px solid blue;
+  border: 2px solid blue;
 }
 
 .controls input {
-    height: 2.5rem;
-    padding-left: 4px;
-    border-radius: 5px;
-    background-color: rgb(230, 230, 250);
-    outline: none;
-    color: black;
-    font-family:'Poppins', sans-serif;
-    font-size: 2rem;
-    transition: transform 0.1s ease-in-out;
+  height: 2.5rem;
+  padding-left: 4px;
+  border-radius: 5px;
+  background-color: rgb(230, 230, 250);
+  outline: none;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  transition: transform 0.1s ease-in-out;
 }
 
 .controls input:hover {
-    transform: scale(101%);
+  transform: scale(101%);
 }
 
 .controls input:focus {
-    border: 2px solid blue;
+  border: 2px solid blue;
 }
 
 .botton-form {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .botton-form button {
-    width: 30%;
-    height: 3rem;
-    border-radius: 5px;
-    background-color: rgb(230, 230, 250);
-    font-size: calc(0.5vw + 1.2rem);
-    ;
-    cursor: pointer;
-    transition: filter 0.2s ease;
-    font-weight: bold;
+  width: 30%;
+  height: 3rem;
+  border-radius: 5px;
+  background-color: rgb(230, 230, 250);
+  font-size: calc(0.5vw + 1.2rem);
+  cursor: pointer;
+  transition: filter 0.2s ease;
+  font-weight: bold;
 }
 
 .botton-form button:hover {
-    filter: brightness(120%);
+  filter: brightness(120%);
 }
 
 .botton-form button:active {
-    border: 2px solid blue;
+  border: 2px solid blue;
 }
 
 @media screen and (max-width: 730px) {
-    .container-contacts {
-        flex-wrap: wrap;
-    }
+  .container-contacts {
+    flex-wrap: wrap;
+  }
 
-    .contact-icon-wrapper {
-        width: auto;
-        height: auto;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 2rem;
-    }
+  .contact-icon-wrapper {
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 
-    .cont-form {
-        width: auto;
-        justify-content: center;
-        flex-direction: column;
-    }
+  .cont-form {
+    width: auto;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-height: 530px) and (orientation: landscape) {
-    #contact {
-        height: auto;
-    }
+  #contact {
+    height: auto;
+  }
 
-    .contact-icon-wrapper {
-        margin-bottom: 3rem;
-    }
+  .contact-icon-wrapper {
+    margin-bottom: 3rem;
+  }
 }

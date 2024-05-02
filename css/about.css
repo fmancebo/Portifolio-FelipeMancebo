@@ -1,146 +1,139 @@
 #about {
-    height: 100%;
-    width: 100%;
-    background-color: black;
-
-    display: flex;
-    color: white;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  display: flex;
+  color: white;
 }
 
 .backgroud-about {
-    width: 50%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .img-wrapper {
-    height: 100%;
-    width: 100%;
-    position: relative;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 .img-wrapper::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    height: 100%;
-    width: 100%;
-    background:
-        linear-gradient(.25turn, transparent 30%, black),
-        /*.25turn é outra forma de escrever a direçao*/
-        linear-gradient(.5turn, transparent 30%, black),
-        linear-gradient(1turn, transparent 65%, black);
-
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(0.25turn, transparent 30%, black),
+    linear-gradient(0.5turn, transparent 30%, black),
+    linear-gradient(1turn, transparent 65%, black);
 }
 
 .img-wrapper img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    /*corta ou expande a img/video para que caiba no container*/
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 .box-about {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
-    width: 50%;
-    padding: 1rem;
+  width: 50%;
+  padding: 1rem;
 }
 
 .section-subtitle h2 {
-    display: inline-block;
-    /*faz com que os elementos sejam inline mas possam ser flex tambem diferente de apenas inline */
-    font-size: calc(0.5vw + 2rem);
+  display: inline-block;
+  font-size: calc(0.5vw + 2rem);
 }
 
 .section-subtitle h2 span {
-    padding: 3px 5px;
-    border-radius: 4px;
-    color: black;
-    background-color: white;
-
+  padding: 3px 5px;
+  border-radius: 4px;
+  color: black;
+  background-color: white;
 }
 
 .box-about h3 {
-    margin: 2rem 1px;
-    font-size: calc(0.5vw + 1.6rem);
+  margin: 2rem 1px;
+  font-size: calc(0.5vw + 1.6rem);
 }
 
 .box-about h3 p {
-    display: inline-block;
-    padding: 2px 4px;
-    border-radius: 4px;
-    color: black;
-    background-color: rgb(255, 8, 173);
-    width: fit-content;
-    /*largura apenas para acomodar conteudo*/
+  display: inline-block;
+  padding: 2px 4px;
+  border-radius: 4px;
+  color: black;
+  background-color: rgb(255, 8, 173);
+  width: fit-content;
 }
 
 .box-about h4 {
-    margin: 1rem 5px;
-    font-size: calc(0.5vw + 1.2rem);
+  margin: 1rem 5px;
+  font-size: calc(0.5vw + 1.2rem);
 }
 
-
-/* .box-about h4 p {
-    display: inline;
-    padding: 2px 4px;
-    font-size: bold;
-    font-weight: 1.75rem;
-} */
-
 .box-about h4 a {
-    display: inline-block;
-    padding: 2px 4px;
-    font-size: bold;
-    font-weight: 1.75rem;
-    color: blue;
-    transition: transform 0.2s ease;
+  display: inline-block;
+  padding: 2px 4px;
+  font-size: bold;
+  font-weight: 1.75rem;
+  color: blue;
+  transition: transform 0.2s ease;
 }
 
 .box-about h4 a:hover {
-    transform: scale(110%);
+  transform: scale(110%);
 }
 
 .button-cta {
-    display: flex;
-    max-width: 190px;
-    margin: 2rem 1rem;
+  display: flex;
+  max-width: 190px;
+  margin: 2rem 1rem;
 }
 
 .button-cta a button {
-    display: inline-block;
-    width: 100%;
-    max-width: 172px;
-    padding: 10px;
-    font-family: 'poppins', sans-serif;
-    font-weight: 700;
-    letter-spacing: .15rem;
-    /*espaço entre as letras*/
-    cursor: pointer;
-    border-radius: 10px;
-    font-size: calc(0.5vw + 1rem);
+  display: inline-block;
+  width: 100%;
+  max-width: 172px;
+  padding: 10px;
+  font-family: "poppins", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.15rem;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: calc(0.5vw + 1rem);
 }
 
 .button-cta a button:hover {
-    transition: all .3s ease;
-    filter: brightness(.8);
-    /*da uma transparencia ao elemento*/
+  transition: all 0.3s ease;
+  filter: brightness(0.8);
+}
+@media only screen and (max-width: 750px) {
+  .backgroud-about {
+    display: none;
+  }
+  .box-about {
+    width: 100%;
+    height: 60vh;
+    margin: 5rem 0;
+  }
+  .box-about h4 {
+    font-size: 1.5rem;
+  }
 }
 
 @media only screen and (max-height: 530px) and (orientation: landscape) {
-    #about {
-        height: auto;
-    }
+  #about {
+    height: auto;
+  }
 
-    .backgroud-about {
-        height: auto;
-    }
+  .backgroud-about {
+    height: auto;
+  }
 }

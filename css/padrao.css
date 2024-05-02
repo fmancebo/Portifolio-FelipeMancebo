@@ -5,21 +5,23 @@
 @import url(./person.css);
 @import url(./projects.css);
 
-@import url('https://fonts.googleapis.com/css2?família=Poppins:wght@400; 500; 700&display=swap');
+@import url("https://fonts.googleapis.com/css2?família=Poppins:wght@400; 500; 700&display=swap");
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing:border-box ;    /*faz com que a margin e o padding nao cubrao espaços adicionais na pag*/
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
-    font-size: 10px;
-    background-color: black;
+html {
+  scroll-behavior: smooth;
+  font-size: 10px;
+  background-color: black;
 }
 
-body{
-    font-family:'Poppins', sans-serif;
-    
+body {
+  font-family: "Poppins", sans-serif;
+}
+button {
+  color: black;
 }

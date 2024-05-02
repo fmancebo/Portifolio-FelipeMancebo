@@ -1,18 +1,17 @@
-footer{
-    height: 15vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
-    background-color: #191919;
-    font-size: calc(0.5vw + 0.8rem);
+footer {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  background-color: #191919;
+  font-size: calc(0.5vw + 0.8rem);
 }
-.container-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;   /*um acima do outro*/
-    color: white;
-    
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
