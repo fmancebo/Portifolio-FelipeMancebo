@@ -184,6 +184,7 @@
 @media screen and (max-width: 730px) {
   .container-contacts {
     flex-wrap: wrap;
+    padding: 0 5px;
   }
 
   .contact-icon-wrapper {
