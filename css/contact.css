@@ -126,6 +126,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   transition: transform 0.1s ease-in-out;
+  border: 2px solid transparent;
 }
 
 .controls textarea:hover {
@@ -146,6 +147,7 @@
   font-family: "Poppins", sans-serif;
   font-size: 2rem;
   transition: transform 0.1s ease-in-out;
+  border: 2px solid transparent;
 }
 
 .controls input:hover {
