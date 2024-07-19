@@ -22,7 +22,7 @@ window.addEventListener("scroll", () => {
   var currentScroll = window.scrollY;
   if (currentScroll > lastScroll && currentScroll > 200) {
     // se estiver rolando para baixo e passar dos 200px, esconde o cabeçalho
-    header.style.top = "-60px";
+    header.style.top = "-70px";
   } else {
     // se estiver rolando para cima, mostra o cabeçalho
     header.style.background = "#191919";
